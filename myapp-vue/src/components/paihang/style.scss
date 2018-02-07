@@ -1,0 +1,40 @@
+@import "~@/main.scss";
+#content{
+    #paihang{
+        @include rect(100%,auto);
+        li{
+           @include rect(100%,1rem);
+           @include flexbox();
+           @include align-items();
+           margin-bottom:0.04rem;
+           border-bottom:1px solid #eee;
+            position:relative;
+           #left{
+             @include rect(36%,1rem);  
+             img{
+                  @include rect(100%,1rem);
+             }
+             p{
+                 position:absolute;
+                 bottom:0rem;
+                 left:0.01rem;
+                  @include font-size(0.12rem);
+                  color:#fff;
+             };
+           }
+           #right{
+               @include rect(60%,1rem);
+               padding-left:0.1rem;
+               padding-top:0.08rem;
+               p{
+                   display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;
+                    line-height:0.3rem;
+                    @include font-size(0.14rem)
+               }; 
+           }
+        }
+    }
+}

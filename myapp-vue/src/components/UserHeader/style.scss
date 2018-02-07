@@ -1,0 +1,5 @@
+@import "~@/main.scss";
+.router-link-active{
+    @include text-color(#fff)  
+}
+

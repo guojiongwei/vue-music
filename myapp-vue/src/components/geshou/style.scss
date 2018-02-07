@@ -1,0 +1,25 @@
+@import "~@/main.scss";
+#content{
+    @include rect(100%,auto);
+    ul{
+       @include rect(100%,100%);
+       li{
+           margin-left:0.2rem;
+            @include rect(100%,0.8rem);
+            @include flexbox();
+            @include align-items();
+           img{
+               @include rect(0.6rem,0.6rem);
+               border-radius:50%;
+           }
+           span{
+               margin-left:0.2rem;
+           }
+//         image[lazy=loading] {
+//width:0.6rem;
+//height: 0.6rem;
+//margin: auto;
+//}
+       }
+    }
+}

@@ -1,0 +1,87 @@
+@import "~@/main.scss";
+#imgs {
+    @include rect(100%, 2.6rem);
+    position: relative;
+    img {
+        @include rect(100%, 2.6rem);
+        position: absolute;
+        top: 0;
+        left: 0
+    }
+    i {
+        position: absolute;
+        top: 0.05rem;
+        left: 0.1rem;
+        z-index: 999;
+        color: #fff;
+        @include font-size(0.24rem);
+    }
+}
+
+#hot {
+    @include rect(100%,0.24rem);
+    @include line-height(0.24rem);
+    padding: 0 10px;
+    @include font-size(0.12rem);
+    color: #666;
+    background-color: #eeeff0;
+}
+
+ul {
+    @include rect(100%, auto);
+    li {
+        @include rect(100%, 0.55rem);
+        @include flexbox();
+        @include align-items();
+        div {
+            &:nth-of-type(1) {
+                @include rect(0.5rem, 0.5rem);
+                @include font-size(0.16rem);
+                text-align: center;
+                line-height: 0.5rem;
+                color: #999;
+            }
+            &:nth-of-type(2) {
+                @inlcude flex();
+                @include rect(100%, 0.5rem);
+                border-bottom: 1px solid #eee;
+                p {
+                    @include font-size(0.17rem);
+                    margin-left: 0.1rem;
+                     display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;
+                    @include line-height(0.3rem) &:nth-of-type(2) {
+                        @include font-size(0.12rem);
+                        color: #888;
+                        @include line-height(0.16rem)
+                    }
+                }
+            }
+            &:nth-of-type(3) {
+                border-bottom: 1px solid #eee;
+                @include rect(0.5rem, 0.5rem);
+                i {
+                    @include font-size(0.2rem);
+                    text-align: center;
+                    line-height: 0.5rem;
+                }
+            }
+        }
+         &:nth-of-type(1){
+            .sort{
+            color:#df3436;
+            }
+        } &:nth-of-type(2){
+            .sort{
+            color:#df3436;
+            }
+        }
+         &:nth-of-type(3){
+            .sort{
+            color:#df3436;
+            }
+        }
+    }
+}

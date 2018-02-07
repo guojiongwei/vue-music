@@ -1,0 +1,57 @@
+//@import "~@/main.scss";
+//.mint-swipe {
+//      @include rect(100%, 1.5rem);
+//      overflow: hidden;
+//      .mint-swipe-item {
+//          img {
+//              @include rect(100%, auto);
+//          }
+//      }
+//  }
+//#tui_top{
+//  @include rect(100%,0.24rem);
+//  @include flexbox();
+//  @include align-items();
+//  @include font-size(0.16rem);
+//  line-height:0.24rem;
+//  span{
+//     display: inline-block;
+//     @include rect(0.04rem,0.2rem);
+//     margin-right:0.1rem;
+//     @include background-color(#d33a31) 
+//  }
+//}
+//#tui_list{
+//  @include rect(100%,3.3rem);
+//  @include flexbox();
+//  flex-wrap:wrap;
+//  @include justify-content(space-around);
+//  @include align-items();
+//  li{
+//      @include rect(32%,1.65rem);
+//      position:relative;
+//      img{
+//          @include rect(100%,auto)
+//      }
+//      span{
+//          position:absolute;
+//          top:0.05rem;
+//          right:0.05rem;
+//          color:#fff;
+//          @include font-size(0.12rem);
+//          i{
+//               @include font-size(0.12rem);
+//          };
+//      }
+//       p{
+//                  @include rect(100%,auto);
+//                  display: -webkit-box;
+//                  -webkit-box-orient: vertical;
+//                  -webkit-line-clamp: 2;
+//                  overflow: hidden;
+//                  margin-left:0.1rem;
+//                  @include font-size(0.12rem);
+//                  
+//   }
+//  }
+//}

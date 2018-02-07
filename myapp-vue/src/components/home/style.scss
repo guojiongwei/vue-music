@@ -1,0 +1,22 @@
+  @import "./../../main.scss";
+       .router-link-active{
+        border-bottom:2px solid #d33a31;
+        @include text-color(#d33a31);
+       
+      }
+       #content{
+           #uls{
+         @include rect(100%, 0.44rem);
+         @include flexbox();
+         @include justify-content(space-around);
+         @include align-items();
+          @include border(0 0 2px 0, #999);
+               li{
+                @include flex();
+                @include rect(auto, 100%);
+                @include flexbox();
+                @include justify-content(space-around);
+                @include align-items();
+        }
+        }
+       } 

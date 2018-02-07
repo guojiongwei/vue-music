@@ -1,0 +1,57 @@
+@import "~@/main.scss";
+.router-link-active{
+    @include text-color(#fff)  
+}
+  #logo{
+      @include rect(100%,auto)
+  }
+.mt-popup{
+ @include rect(100%,100%);
+}
+#box{
+     @include rect(3rem,6.66rem);
+       overflow:auto;
+        #top{
+             @include rect(100%,1.8rem);
+             @include background-color(#000);
+         p{
+             @include text-color(#fff)
+         }
+        }
+        #center{
+            @include rect(100%,4.4rem);
+            ul{ 
+                @include rect(100%,100%);
+                li{
+                    @include rect(100%,0.4rem);
+                    line-height:0.4rem;
+                    i{
+                        margin:0 0.08rem;
+                    }
+                    span{
+                        float:right;
+                        margin-right:0.1rem;
+                        color:red;
+                        @include font-size(0.12rem)
+                    }
+                    &:nth-of-type(4),&:nth-of-type(6){
+                        border-bottom:0.06rem #eee solid;
+                        box-sizing:content-box ;
+                    }
+                }
+            }
+        }
+       #bottom{
+            @include rect(100%,.5rem);
+            border-top:0.01rem solid #eee;
+           ul{
+                @include rect(100%,100%);
+               @include flexbox();
+               @include justify-content(space-around);
+               @include align-items();
+               li{
+                   
+               }
+           }
+       }
+    }
