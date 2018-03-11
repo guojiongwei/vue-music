@@ -1,4 +1,4 @@
-export const baseUrl = 'http://localhost:3000'
+export const baseUrl = 'http://39.107.82.180:3000'
 export const myTime = {
   /**
    * 格式化时间戳(分:秒)
